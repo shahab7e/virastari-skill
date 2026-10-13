@@ -14,7 +14,7 @@
 - سه سطح ویرایش: فنی، فنی + زبانی (پیش‌فرض)، کامل
 - رعایت نوع متن (شعر، داستان، علمی، اداری، متن کهن و ...)
 - خروجی: فایل ویراسته + گزارش ایرادها (docx / md / txt؛ ورودی pdf هم پشتیبانی می‌شود)
-- اسکریپت‌های کمکی: `scripts/normalize.py` (اصلاح مکانیکی بی‌خطر) و `scripts/scan.py` (یافتن سرنخ ایرادها)
+- اسکریپت‌های کمکی: `scripts/normalize.py` (اصلاح مکانیکی بی‌خطر)، `scripts/farhang_check.py` (رسم‌الخط فرهنگستان) و `scripts/scan.py` (یافتن سرنخ ایرادها)
 
 ## نصب
 
@@ -41,7 +41,7 @@ git clone https://github.com/shahab7e/virastari-skill ~/.claude/skills/virastari
 ```
 SKILL.md          دستورالعمل اصلی اسکیل
 references/       قواعد و جدول‌های مرجع (نشانه‌گذاری، رسم‌الخط، املا، عدد، ارجاع، خطاها، فرهنگواره)
-scripts/          normalize.py و scan.py
+scripts/          normalize.py، farhang_check.py و scan.py
 ```
 
 ## نکته
