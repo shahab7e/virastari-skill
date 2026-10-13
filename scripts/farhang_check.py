@@ -4,7 +4,7 @@
 # python3 farhang_check.py in.(…) --fix -o out.(…) [--log f.tsv] → اصلاحات بی‌خطر + سرنخ‌ها
 import re, sys, argparse
 from collections import Counter
-ZW = ""; FA = "آ-یء-يپچژکگیۀأإؤئ"; W = f"[{FA}{ZW}]"
+ZW = "‌"; FA = "آ-یء-يپچژکگیۀأإؤئ"; W = f"[{FA}{ZW}]"
 B = f"(?<![{FA}{ZW}])"; E = f"(?![{FA}{ZW}])"
 def ws(*a): return B + "(?:" + "|".join(a) + ")" + E
 Z = lambda s: s.replace("_", ZW)  # «_» در رشته‌های زیر = نیم‌فاصله
