@@ -13,6 +13,7 @@ scan.py — اسکن مکانیکی متن فارسی برای یافتن ایر
 ورودی: .txt / .md / .docx (برای docx، python-docx لازم است).
 """
 import sys, re, json, argparse
+sys.stdout.reconfigure(encoding="utf-8"); sys.stderr.reconfigure(encoding="utf-8")
 from collections import Counter
 
 ZW = "‌"

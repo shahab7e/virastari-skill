@@ -21,6 +21,7 @@ normalize.py — اصلاحات مکانیکیِ «بی‌خطر» در ویرا
     python3 normalize.py in.docx -o out.docx          # متن پاراگراف‌ها و جدول‌ها (قالب run اول حفظ می‌شود)
 """
 import re, sys, argparse
+sys.stdout.reconfigure(encoding="utf-8"); sys.stderr.reconfigure(encoding="utf-8")
 
 ZW = "‌"
 FA = "آ-یء-يپچژکگی"

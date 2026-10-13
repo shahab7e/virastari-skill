@@ -3,6 +3,7 @@
 # python3 farhang_check.py in.(txt|md|docx)  → گزارش سرنخ‌ها
 # python3 farhang_check.py in.(…) --fix -o out.(…) [--log f.tsv] → اصلاحات بی‌خطر + سرنخ‌ها
 import re, sys, argparse
+sys.stdout.reconfigure(encoding="utf-8"); sys.stderr.reconfigure(encoding="utf-8")
 from collections import Counter
 ZW = "\u200c"; FA = "آ-یء-يپچژکگیۀأإؤئ"; W = f"[{FA}{ZW}]"
 B = f"(?<![{FA}{ZW}])"; E = f"(?![{FA}{ZW}])"
